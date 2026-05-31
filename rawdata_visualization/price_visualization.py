@@ -2,8 +2,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.dates as mdates
 
-file_path = r"C:\Users\HP\Documents\Downloads\Microsoft Inference\MSFT_stock_2021.xlsx"
-df = pd.read_excel(file_path)
+file_path = "MSFT_stock_2021.xlsx" 
+try:
+    df = pd.read_excel(file_path)
+except:
+    df = pd.read_csv("MSFT_stock_2021.xlsx - MSFT.csv")
 
 # Convert Date column to datetime objects for clean x-axis formatting
 df['Date'] = pd.to_datetime(df['Date'])
