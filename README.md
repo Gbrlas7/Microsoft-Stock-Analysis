@@ -55,7 +55,7 @@ This test evaluates how well reality matches a theoretical Gaussian Bell Curve (
 
 ![Chi-Square Test](test_visualization/3_chisquare_test.png)
 * **Test against Fitted Normal $N(\hat{\mu}, \hat{\sigma}^2)$:** * **Result:** $\chi^2 = 726.42$ (Critical Value = $7.81$, $df=3$).
-* **Conclusion:** **Reject $H_0$.** Even when the theoretical curve is set to Microsoft's actual historical mean and variance, the model still fails. The large $\chi^2$ statistic proves the presence of **heavy tails (leptokurtosis)**—extreme market shocks and irregularities occur with far greater frequency than conventional finance equations assume.
+* **Conclusion:** **Reject $H_0$.** Even when the theoretical curve is set to Microsoft's actual historical mean and variance, the model still fails. The large $\chi^2$ statistic proves the presence of **heavy tails** (extreme market shocks and irregularities occur with far greater frequency than conventional finance equations assume).
 
 ---
 ## Conclusion & Insights
