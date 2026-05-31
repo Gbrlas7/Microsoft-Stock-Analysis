@@ -62,7 +62,7 @@ This test evaluates how well reality matches a theoretical Gaussian Bell Curve (
 
 By synthesizing the results of the Sign, Wilcoxon, and Chi-Square tests, we get three critical insights into the behavior of Microsoft's stock returns:
 
-1. **Rejection of the 50/50 Random Walk:** The market does not act as a fair coin toss. The Sign and Wilcoxon tests conclusively prove that Microsoft possesses a structural upward drift—not just in the *frequency* of green days, but in the *magnitude* of those gains. Thus, it actually follows the Random Walk Hypothesis (independent random path).
+1. **Rejection of the 50/50 Random Walk:** The market does not act as a fair coin toss. The Sign and Wilcoxon tests conclusively prove that Microsoft possesses a structural upward drift not just in the frequency of green days, but in the magnitude of those gains. Thus, it actually follows the Random Walk Hypothesis (independent random path).
 2. **Not-Normal Movement** The Chi-Square goodness-of-fit test mathematically exposes the danger of traditional Bell Curves. The extreme $\chi^2$ error ($726.42$) is driven by the fact that real-world markets experience large price shocks and micro-movements far more frequently than normal distributions allow.
 3. **Implications for Risk Management:** Ultimately, this data proves that early, "smooth" pricing models (which assume constant volatility and normal distributions) will severely underestimate maximum potential losses and risk. To accurately price options or manage risk on modern equities like MSFT, quantitative analysts must abandon Gaussian assumptions in favor of robust frameworks for example like **Jump-Diffusion** or **Stochastic Volatility (GARCH)** models that take account for heavy tails and asymmetric momentum.
 
