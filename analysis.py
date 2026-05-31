@@ -8,9 +8,12 @@ from scipy.stats import norm, chi2
 def phi(x):
     return 0.5 * (1.0 + math.erf(x / math.sqrt(2.0)))
 
-file_path = r"C:\Users\HP\Documents\Downloads\Microsoft Inference\MSFT_stock_2021.xlsx"
-df = pd.read_excel(file_path)
-
+file_path = "MSFT_stock_2021.xlsx" 
+try:
+    df = pd.read_excel(file_path)
+except:
+    df = pd.read_csv("MSFT_stock_2021.xlsx - MSFT.csv")
+    
 prices = df["Close"].values
 R = np.log(prices[1:]/prices[:-1])
 n = len(R)
